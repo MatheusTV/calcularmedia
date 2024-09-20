@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
       resultSection.style.display = 'block';
       clearButton.style.display = 'block';
       gradesList.innerHTML = '<strong>NOTAS:</strong> ' + grades.join(', ');
-      averageDisplay.textContent = 'MÉDIA: ' + average.toFixed(2);
+      averageDisplay.textContent = 'MÉDIA: ' + average.toFixed(3);
 
       calculateButton.disabled = true;
     });
@@ -72,6 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="input-group">
           <label for="grade2">NOTA 2:</label>
           <input type="number" id="grade2" class="grade" min="0" max="10">
+        </div>
+        <div class="input-group">
+          <label for="grade3">NOTA 3:</label>
+          <input type="number" id="grade3" class="grade" min="0" max="10">
         </div>
       `;
       updateAddGradeButton();
